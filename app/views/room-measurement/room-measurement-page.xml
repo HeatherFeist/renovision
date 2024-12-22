@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Room Measurement">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back" />
+  </ActionBar>
+
+  <GridLayout rows="*, auto">
+    <ContentView row="0" id="arView" class="w-full h-full">
+      <!-- AR measurement view -->
+    </ContentView>
+    
+    <StackLayout row="1" class="p-4 bg-white">
+      <Button text="Start Measurement" tap="{{ startMeasurement }}" class="btn btn-primary m-2" />
+      <Button text="Generate Floor Plan" tap="{{ generateFloorPlan }}" class="btn btn-secondary m-2" />
+      <Label text="{{ measurementInfo }}" class="text-center p-2" textWrap="true" />
+    </StackLayout>
+  </GridLayout>
+</Page>

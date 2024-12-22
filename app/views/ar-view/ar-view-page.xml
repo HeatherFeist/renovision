@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="AR View">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back" />
+  </ActionBar>
+
+  <GridLayout>
+    <ContentView id="arView" class="w-full h-full">
+      <!-- AR content will be rendered here -->
+    </ContentView>
+    
+    <StackLayout horizontalAlignment="right" verticalAlignment="bottom" class="p-4">
+      <Button text="Scan Room" tap="{{ onScanRoom }}" class="btn btn-primary m-2" />
+      <Button text="Add Furniture" tap="{{ onAddFurniture }}" class="btn btn-secondary m-2" />
+      <Button text="Save Design" tap="{{ onSaveDesign }}" class="btn btn-success m-2" />
+    </StackLayout>
+  </GridLayout>
+</Page>
